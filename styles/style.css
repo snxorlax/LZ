@@ -1,0 +1,75 @@
+html{
+    margin: 0;
+}
+body{
+    margin:0;
+}
+#background{
+    /*background-color:rgb(209, 134, 121)*/
+    background-color:#19DB8A;
+    /*background-color:#DB4719;*/
+
+}
+
+@font-face{
+    font-family:"Raleway";
+    src:url("../fonts/Raleway-VariableFont_wght.ttf");
+}
+
+#logo{
+    font-family: Raleway;
+    font-size: 7em;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 0;
+    flex-grow: 3.5;
+    text-align: left;
+    color: white;
+    margin-left: 25px;
+}
+
+.nav-text{
+    font-family: Raleway;
+    font-size: 1.4em;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-right: 15px;
+    color: white;
+    min-width: 6em;
+    text-align:right;
+}
+
+#navigation-bar{
+    display:flex;
+}
+
+#bass-stencil{
+    max-height: 800px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transform: scaleX(-1);
+}
+#headshot{
+    max-height: 500px;
+    object-fit: cover;
+}
+
+#bio{
+    font-family:Raleway;
+    margin: 5px;
+    color: white;
+}
+#home-page{
+    display:flex;
+}
+#about-page{
+    display:none;
+}
+#lessons-page{
+    display:none;
+}
+
