@@ -1,9 +1,12 @@
 html{
     margin: 0;
 }
+
 body{
     margin:0;
+    /*max-height: 900px;*/
 }
+
 #background{
     /*background-color:rgb(209, 134, 121)*/
     /*background-color:#19DB8A;*/
@@ -27,8 +30,8 @@ body{
     padding: 0;
     flex-grow: 3.5;
     text-align: left;
-    color: #dc9ce2;
-    /*color: white;*/
+    /*color: #dc9ce2;*/
+    color: white;
     margin-left: 25px;
 }
 
@@ -50,12 +53,13 @@ body{
 }
 
 #bass-stencil{
-    max-height: 800px;
+    max-height: 900px;
     object-fit: cover;
     margin: 0;
     padding: 0;
     border: none;
     transform: scaleX(-1);
+    grid-column: 3 / span 1;
 }
 
 #violin-stencil{
@@ -91,6 +95,7 @@ body{
 }
 #about-page{
     display:none;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 #lessons-page{
     display:none;
