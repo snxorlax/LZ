@@ -8,18 +8,16 @@
 
 <body id="background">
     <div id="navigation-bar">
-        <button id="logo" onclick="setActivePage('home-page')">LZ</button>
         <div style="display:flex; flex-grow: 1;">
             <button class="nav-text" onclick="setActivePage('about-page')">about</button>
+            <button class="nav-text" onclick="setActivePage('music-page')">music</button>
             <button class="nav-text" onclick="setActivePage('lessons-page')">lessons</button>
-            <button class="nav-text" onclick="setActivePage('lessons-page')">tour</button>
             <button class="nav-text" onclick="setActivePage('contact-page')">contact</button>
         </div>
+        <button id="logo" onclick="setActivePage('home-page')">LZ</button>
     </div>
     <div id="home-page">
-        <!--<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7llf8KB8tiPd36RXeAnufO?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>-->
         <!--<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3jCjD2qqVnKR3CRgZSX6qH?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>-->
-        <!--<iframe id="music-embed" style="border: 0; width: 100%; height: 352px;" src="https://bandcamp.com/EmbeddedPlayer/album=2933749601/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/" seamless></iframe>-->
         <!--<iframe id="music-embed" style="margin: 15px; border: 0; width: 100%; height: 42px;"
             src="https://bandcamp.com/EmbeddedPlayer/album=2933749601/size=small/bgcol=ffffff/linkcol=333333/transparent=true/"
 seamless><a href="https://scarequotesatl.bandcamp.com/album/tactics">Tactics by Scare Quotes</a></iframe>-->
@@ -32,17 +30,22 @@ seamless><a href="https://scarequotesatl.bandcamp.com/album/tactics">Tactics by 
             I’m a multi-instrumentalist, including violin, guitar, trumpet, and voice. I started taking classical violin
             lessons when I was 8, and grew up playing old-time fiddle music with my mom in New Hampshire. I've always
             loved exploring new instruments, and began playing guitar more seriously in college and afterwards in bands.
+            <br>
+            <br>
+            <br>
             No matter what age or genre, I believe music lessons should be fun and creative, and facilitate general
             musicality! I’ll help you learn both to read sheet music and play by ear, incorporate basic music theory,
-            and most importantly develop your ability to express yourself on the instrument. I’m excited to offer
-            beginner violin and guitar lessons for children and adults ages 8 and up! Whether you or your child are
-            looking to play classical music or old-time fiddle, we’ll talk through your goals and passions and get
-            started! I’ve played in several bands and ensembles, taught violin lessons at Wheeler School in Providence,
-            RI and coached bands at Girl’s Rock, and I look forward to being your teacher! I’m located in Virginia
-            Highland, and offer in-home lessons in nearby neighborhoods.
+            and most importantly develop your ability to express yourself on the instrument.
         </p>
     </div>
     <div id="lessons-page">
+        <iframe id="music-embed" style="border: 0; width: 100%; height: 352px;"
+            src="https://bandcamp.com/EmbeddedPlayer/album=2933749601/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/"
+            seamless></iframe>
+        <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/7llf8KB8tiPd36RXeAnufO?utm_source=generator" width="100%"
+            height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <p id="lessons-text">
             Pricing 60 minute lesson $60
             45 minute lesson $50
@@ -53,6 +56,12 @@ seamless><a href="https://scarequotesatl.bandcamp.com/album/tactics">Tactics by 
             musical interests and experiences. If I have availability and you’re in my geographic range, we’ll set up a
             phone call for a brief consultation.
         </p>
+    </div>
+    <div id="contact-page">
+        <form>
+            <input type="text">
+        </form>
+        <img id="headshot" src="images/lz_headshot.jpg">
     </div>
     <script src="js/main.js"> </script>
 </body>

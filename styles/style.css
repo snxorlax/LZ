@@ -29,10 +29,12 @@ body{
     border: none;
     padding: 0;
     flex-grow: 3.5;
-    text-align: left;
-    /*color: #dc9ce2;*/
-    color: white;
+    text-align: right;
+    color: #dc9ce2;
+    /*color: #fda98f;*/
+    /*color: white;*/
     margin-left: 25px;
+    margin-right: 25px;
 }
 
 .nav-text{
@@ -42,10 +44,11 @@ body{
     border: none;
     padding: 0;
     margin-right: 15px;
+    /*color: #fda98f;*/
     color: #dc9ce2;
     /*color: white;*/
     min-width: 6em;
-    text-align:right;
+    text-align: right;
 }
 
 #navigation-bar{
@@ -85,9 +88,15 @@ body{
     font-family:Raleway;
     margin: 15px;
     color: white;
-    display: inline-block;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    position: relative;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    max-width: 650px;
+    left: 25%;
+    top: 12%;
 }
+
 #home-page{
     display:grid;
     width: 100%;
@@ -97,16 +106,28 @@ body{
     display:none;
     grid-template-columns: 25% 25% 25% 25%;
 }
+
 #lessons-page{
     display:none;
 }
 #lessons-text{
     color:white;
+    max-width: 650px;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+#contact-page{
+    display:none;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#headshot{
+    object-fit: cover;
+    grid-column: 2;
 }
 
 #music-embed{
     position: relative;
-    display: none;
     top: 80%;
     left: 20%;
 }
